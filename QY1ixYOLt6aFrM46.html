@@ -4,9 +4,15 @@
     <link rel="shortcut icon" href="#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
+	  <script>
+		  function click_play(){
+			  alert(audio);
+		  }
+	  </script>
+	</head>
   <body>
-	<audio preload = "auto"><source src= "law9.m4a" type="audio/m4a" /></audio>
+	<iframe src="/law9.m4a" id="audio" style="display:none"></iframe>
 	<button class="play_button" onclick="click_play();"><img src="button.png" class="full_img"></button>
+	  
   </body>
 </html>
