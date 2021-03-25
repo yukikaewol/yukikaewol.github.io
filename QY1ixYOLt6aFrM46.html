@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-	<img src="button.png" onclick="playAudio('law9.m4a')">
+	<iframe src="/law9.m4a" id="audio" style="display:none"></iframe>
+	<audio preload = "auto">
+	<button class="play_button" onclick="click_play();"><img src="button.png" class="full_img"></button>
   </body>
 </html>
