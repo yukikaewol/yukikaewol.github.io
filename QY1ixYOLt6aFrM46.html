@@ -8,5 +8,17 @@
   <body>
 	<iframe src="https://drive.google.com/file/d/1MaQN5NOTsNhbyWafTpGN6mcaMNC3IQ9M/view?usp=sharing" id="audio" style="display:none"></iframe>
 	<button class="play_button" onclick="click_play();"><img src="button.png" class="full_img"></button>
+	  <audio id='audio_play' src='/law9.m4a'></audio> 
+	  <script type="text/javascript">
+		  <button class="play_button" onclick="click_play();"><img src="button.png" class="full_img"></button>
+function play() { 
+    			var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+        audio.currentTime = 0 
+    } 
+} 
   </body>
 </html>
